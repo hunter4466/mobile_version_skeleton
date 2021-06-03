@@ -163,6 +163,9 @@
 /* --------Background elements----------------------- */
 .elm_1 {
   position: absolute;
+  background-image: url(./Assets/Images/elm1.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
   top: 21vw;
   z-index: 1;
   width: 5vw;
@@ -175,6 +178,9 @@
 
 .elm_2 {
   position: absolute;
+  background-image: url(./Assets/Images/elm2.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
   left: 38vw;
   top: 27vw;
   z-index: 1;
@@ -183,6 +189,9 @@
 
 .elm_3 {
   position: absolute;
+  background-image: url(./Assets/Images/elm3.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
   left: 38vw;
   top: 25vw;
   z-index: 1;
@@ -191,6 +200,9 @@
 
 .elm_4 {
   position: absolute;
+  background-image: url(./Assets/Images/elm4.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
   left: 88.5vw;
   top: 25vw;
   z-index: 1;
@@ -199,6 +211,9 @@
 
 .elm_5 {
   position: absolute;
+  background-image: url(Assets/Images/elm5.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
   left: 90vw;
   top: 134vw;
   z-index: 1;
@@ -207,6 +222,9 @@
 
 .elm_6 {
   position: absolute;
+  background-image: url(./Assets/Images/elm6.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
   left: 60vw;
   top: 170vw;
   z-index: 1;
