@@ -114,6 +114,10 @@
   height: 20vw;
 }
 
+.footer h2 {
+  display: none;
+}
+
 .footer_ul {
   display: flex;
   width: 100vw;
