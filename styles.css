@@ -16,7 +16,7 @@
 .header {
   display: flex;
   height: 30vw;
-  width: 95vw;
+  width: 100vw;
   flex-direction: row;
   justify-content: space-between;
 }
@@ -56,6 +56,7 @@
   height: auto;
   flex-direction: column;
   margin-top: 10vw;
+  z-index: 1;
 }
 
 .greetings {
@@ -164,6 +165,7 @@
 
 /* --------Background elements----------------------- */
 .elm_1 {
+  color: rgba(0,0,0,0);
   position: absolute;
   background-image: url(./Assets/Images/elm1.png);
   background-size: 100%;
@@ -179,6 +181,7 @@
 }
 
 .elm_2 {
+  color: rgba(0,0,0,0);
   position: absolute;
   background-image: url(./Assets/Images/elm2.png);
   background-size: 100%;
@@ -190,6 +193,7 @@
 }
 
 .elm_3 {
+  color: rgba(0,0,0,0);
   position: absolute;
   background-image: url(./Assets/Images/elm3.png);
   background-size: 100%;
@@ -201,17 +205,20 @@
 }
 
 .elm_4 {
+  color: rgba(0,0,0,0);
   position: absolute;
   background-image: url(./Assets/Images/elm4.png);
   background-size: 100%;
   background-repeat: no-repeat;
   left: 87vw;
   top: 25vw;
-  z-index: 1;
+  z-index: 2;
   width: 13vw;
+  height: 30vw;
 }
 
 .elm_5 {
+  color: rgba(0,0,0,0);
   position: absolute;
   background-image: url(Assets/Images/elm5.png);
   background-size: 100%;
@@ -223,6 +230,7 @@
 }
 
 .elm_6 {
+  color: rgba(0,0,0,0);
   position: absolute;
   background-image: url(./Assets/Images/elm6.png);
   background-size: 100%;
