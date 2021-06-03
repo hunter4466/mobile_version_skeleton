@@ -165,7 +165,7 @@
 
 /* --------Background elements----------------------- */
 .elm_1 {
-  color: rgba(0,0,0,0);
+  color: rgba(0, 0, 0, 0);
   position: absolute;
   background-image: url(./Assets/Images/elm1.png);
   background-size: 100%;
@@ -181,7 +181,7 @@
 }
 
 .elm_2 {
-  color: rgba(0,0,0,0);
+  color: rgba(0, 0, 0, 0);
   position: absolute;
   background-image: url(./Assets/Images/elm2.png);
   background-size: 100%;
@@ -193,7 +193,7 @@
 }
 
 .elm_3 {
-  color: rgba(0,0,0,0);
+  color: rgba(0, 0, 0, 0);
   position: absolute;
   background-image: url(./Assets/Images/elm3.png);
   background-size: 100%;
@@ -205,7 +205,7 @@
 }
 
 .elm_4 {
-  color: rgba(0,0,0,0);
+  color: rgba(0, 0, 0, 0);
   position: absolute;
   background-image: url(./Assets/Images/elm4.png);
   background-size: 100%;
@@ -218,7 +218,7 @@
 }
 
 .elm_5 {
-  color: rgba(0,0,0,0);
+  color: rgba(0, 0, 0, 0);
   position: absolute;
   background-image: url(Assets/Images/elm5.png);
   background-size: 100%;
@@ -230,7 +230,7 @@
 }
 
 .elm_6 {
-  color: rgba(0,0,0,0);
+  color: rgba(0, 0, 0, 0);
   position: absolute;
   background-image: url(./Assets/Images/elm6.png);
   background-size: 100%;
