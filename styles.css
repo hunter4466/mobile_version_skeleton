@@ -156,7 +156,6 @@
   top: 21vw;
   z-index: 1;
   width: 5vw;
-  left: 0vw;
 }
 .elm_2 {
 
@@ -182,16 +181,16 @@
   z-index: 1;
   width: 5vw;
 }
-.elm_5 {
 
+.elm_5 {
   position: absolute;
   left: 90vw;
   top: 134vw;
   z-index: 1;
   width: 6.5vw;
 }
-.elm_6 {
 
+.elm_6 {
   position: absolute;
   left: 60vw;
   top: 170vw;
