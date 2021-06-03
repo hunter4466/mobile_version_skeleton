@@ -3,9 +3,10 @@
 .flexbox {
   position: absolute;
   display: flex;
-  width: 100vw;
+  width: 95vw;
   height: 100vw;
   flex-direction: column;
+  margin: 0.1vw;
 }
 
 /* --------------------origin flex box items--------------------- */
@@ -15,7 +16,7 @@
 .header {
   display: flex;
   height: 30vw;
-  width: 100vw;
+  width: 95vw;
   flex-direction: row;
   justify-content: space-between;
 }
@@ -77,6 +78,7 @@
 
 .about {
   margin-left: 5vw;
+  width: 88vw;
 }
 
 .about h3 {
@@ -84,7 +86,7 @@
   font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 500;
-  font-size: 4.5vw;
+  font-size: 4.3vw;
   line-height: 7vw;
   user-select: none;
 }
@@ -169,7 +171,7 @@
   top: 21vw;
   z-index: 1;
   width: 5vw;
-  right: 95vw;
+  right: 90vw;
 }
 
 .icon_list {
@@ -203,7 +205,7 @@
   background-image: url(./Assets/Images/elm4.png);
   background-size: 100%;
   background-repeat: no-repeat;
-  left: 88.5vw;
+  left: 87vw;
   top: 25vw;
   z-index: 1;
   width: 13vw;
