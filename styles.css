@@ -72,6 +72,7 @@
   font-weight: bold;
   font-size: 12vw;
   line-height: 16vw;
+  user-select: none;
 }
 
 .about {
@@ -85,15 +86,22 @@
   font-weight: 500;
   font-size: 4.5vw;
   line-height: 7vw;
+  user-select: none;
 }
 
-.lets_connect h3 {
+.lets_connect a:hover {
+  color:#7f8cff94;
+}
+
+.lets_connect a {
   color: #7f8cff;
   font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 5vw;
-  line-height: 7vw;
+  line-height: 10vw;
+  margin-bottom: 5vw;
+  user-select: none;
 }
 
 /* --------Footer----------------------- */
@@ -101,6 +109,14 @@
   display: flex;
   width: 100vw;
   height: 20vw;
+}
+
+.footer_ul {
+  display: flex;
+  width: 100vw;
+  height: 20vw;
+  list-style-type: none;
+  padding-left: 0.1vw;
 }
 
 .element {
@@ -150,6 +166,11 @@
   top: 21vw;
   z-index: 1;
   width: 5vw;
+  right:95vw;
+}
+
+.icon_list{
+  list-style-type: none;
 }
 
 .elm_2 {
@@ -170,7 +191,7 @@
 
 .elm_4 {
   position: absolute;
-  left: 87vw;
+  left: 88.5vw;
   top: 25vw;
   z-index: 1;
   width: 13vw;
