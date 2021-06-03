@@ -90,7 +90,7 @@
 }
 
 .lets_connect a {
-  color:#7f8cff;
+  color: #7f8cff;
   font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 500;
@@ -101,8 +101,8 @@
 }
 
 .lets_connect a:hover {
-    color:#7f8cff94;
-  }
+  color: #7f8cff94;
+}
 
 /* --------Footer----------------------- */
 .footer {
