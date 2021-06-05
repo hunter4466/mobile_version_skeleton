@@ -1,4 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+ul {
+  list-style: none;
+  margin-left:-11vw;
+}
+body {
+  font-family: 'Poppins', sans-serif;
+}
 
 .flexbox {
   position: absolute;
@@ -250,9 +257,10 @@
 .work_grid {
   font-family: 'Poppins', sans-serif;
   position: relative;
-  height: 588vw;
-  margin-top: 40vw;
+  height: fit-content;
+  margin-top: 0vw;
   grid-template-rows: 147vw 147vw 147vw;
+  margin-bottom: 30vw;
 }
 
 .box {
@@ -261,7 +269,7 @@
   flex-direction: column;
   width: 87.2vw;
   height: fit-content;
-  margin-left: 6.6vw;
+  margin-left: 5.5vw;
   margin-top: 10vw;
 }
 
@@ -312,6 +320,7 @@
   display: flex;
   flex-direction: row;
   height: 14vw;
+  margin-left: -6vw;
 }
 
 .feature_1 {
@@ -351,6 +360,7 @@
   display: flex;
   flex-direction: row;
   height: 16vw;
+  margin-left: -9vw;
 }
 
 .languages h5 {
@@ -413,6 +423,7 @@
   flex-direction: row;
   height: 10vw;
   margin-bottom: 5vw;
+  list-style-type: none;
 }
 
 .lang_prop p {
