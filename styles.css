@@ -363,10 +363,12 @@ body {
 }
 
 .languages {
-  display: flex;
-  flex-direction: row;
+  width: 80vw;
   height: 16vw;
   margin-left: -9vw;
+}
+.languages li {
+  float: left;
 }
 
 .languages h5 {
