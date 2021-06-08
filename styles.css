@@ -265,7 +265,6 @@ body {
   font-family: 'Poppins', sans-serif;
   position: relative;
   height: fit-content;
-  margin-top: 0;
   grid-template-rows: 147vw 147vw 147vw;
   margin-bottom: 30vw;
 }
@@ -274,9 +273,8 @@ body {
   font-family: 'Poppins', sans-serif;
   position: relative;
   height: fit-content;
-  margin-top: 0;
   grid-template-rows: 147vw 147vw 147vw;
-  margin-bottom: -1vw;
+  margin-bottom: 30vw;
 }
 
 .box {
@@ -481,8 +479,8 @@ body {
 .contact_background {
   position: absolute;
   background-color: #6070ff;
-  width: 100vw;
-  left: -3vw;
+  width: 102vw;
+  left: -7vw;
   height: 185vw;
   border-top-left-radius: 25vw;
 }
