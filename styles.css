@@ -269,7 +269,8 @@ body {
   grid-template-rows: 147vw 147vw 147vw;
   margin-bottom: 30vw;
 }
-.work_grid {
+
+.work_grid_final {
   font-family: 'Poppins', sans-serif;
   position: relative;
   height: fit-content;
@@ -376,6 +377,7 @@ body {
   height: 16vw;
   margin-left: -9vw;
 }
+
 .languages li {
   float: left;
 }
@@ -618,6 +620,7 @@ body {
   margin: 2vw;
   border-style: none;
 }
+
 .contact_form {
   z-index: 2;
 }
