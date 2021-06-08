@@ -602,8 +602,13 @@ body {
   background-color: white;
 }
 
-.contact_button_1 p {
+.contact_button_1 button {
+  font-family: 'Poppins', sans-serif;
   color: #396df2;
   font-size: 4vw;
   margin: 2vw;
+  border-style: none;
+}
+.contact_form {
+  z-index: 2;
 }
