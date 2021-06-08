@@ -137,6 +137,7 @@ body {
   height: 20vw;
   list-style-type: none;
   padding-left: 0.1vw;
+  margin-left: -4vw;
 }
 
 .element {
@@ -267,6 +268,14 @@ body {
   margin-top: 0;
   grid-template-rows: 147vw 147vw 147vw;
   margin-bottom: 30vw;
+}
+.work_grid {
+  font-family: 'Poppins', sans-serif;
+  position: relative;
+  height: fit-content;
+  margin-top: 0;
+  grid-template-rows: 147vw 147vw 147vw;
+  margin-bottom: -1vw;
 }
 
 .box {
@@ -471,7 +480,7 @@ body {
   position: absolute;
   background-color: #6070ff;
   width: 100vw;
-  left: -6.6vw;
+  left: -3vw;
   height: 185vw;
   border-top-left-radius: 25vw;
 }
