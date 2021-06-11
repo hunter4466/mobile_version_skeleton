@@ -744,7 +744,7 @@ body {
 
 /* ----------------------------- DESKTOP VERSION ------------------ */
 
-@media (min-width: 800px) {
+@media (min-width: 1024px) {
   .hidden {
     display: none;
   }
@@ -1154,7 +1154,7 @@ body {
     display: flex;
     flex-direction: row;
     width: 80vw;
-    height: 29vw;
+    height: 31.7vw;
     margin-left: 16vw;
     margin-top: 10vw;
     border: 0.1vw solid transparent;
@@ -1208,7 +1208,7 @@ body {
     display: flex;
     flex-direction: row-reverse;
     width: 80vw;
-    height: 29vw;
+    height: 31.7vw;
     margin-left: 16vw;
     margin-top: 10vw;
     border: 0.1vw solid transparent;
@@ -1235,7 +1235,7 @@ body {
   .sub_box {
     font-family: 'Poppins', sans-serif;
     margin-left: 4.2vw;
-    width: 38vw;
+    width: 25vw;
   }
 
   .sub_box_2 {
@@ -1266,8 +1266,8 @@ body {
   .preview {
     background-size: fit-content;
     background-repeat: no-repeat;
-    width: 33.58vw;
-    height: 25.11vw;
+    width: 36.94vw;
+    height: 27.62vw;
     margin: 2vw;
   }
 
@@ -1305,7 +1305,7 @@ body {
     display: flex;
     flex-direction: row;
     height: 2vw;
-    margin-left: -2.5vw;
+    margin-left: -1vw;
     margin-bottom: 2vw;
     padding-top: 0;
   }
@@ -1337,7 +1337,7 @@ body {
   .description {
     height: fit-content;
     margin-left: 0;
-    width: 32vw;
+    width: 25vw;
   }
 
   .description p {
@@ -1348,7 +1348,7 @@ body {
   .languages {
     width: 40vw;
     height: 4.45vw;
-    margin-left: -2.8vw;
+    margin-left: -1vw;
   }
 
   .languages li {
@@ -1373,10 +1373,11 @@ body {
     border-style: solid;
     border-width: 0.2vw;
     border-color: #396df2;
+    width: -moz-fit-content;
     width: fit-content;
     margin-bottom: 1vw;
     margin-top: 1vw;
-    margin-left: 0;
+    margin-left: 0vw;
     user-select: none;
     color: #396df2;
   }
@@ -1398,7 +1399,10 @@ body {
     justify-content: space-between;
     height: 5vw;
     font-size: 1.67vw;
-    width: 30vw;
+    width: 40vw;
+    border-bottom-style: solid;
+    border-color: #DFE1E6;
+    border-width: 0.2vw;
   }
 
   .about_category h5 {
@@ -1412,7 +1416,8 @@ body {
     justify-content: space-between;
     height: 5vw;
     font-size: 1.67vw;
-    width: 30vw;
+    width: 40vw;
+    border-width: 0.2vw;
   }
 
   .about_category_1 h5 {
@@ -1427,17 +1432,17 @@ body {
     background-size: 100%;
     background-repeat: no-repeat;
     background-position-y: 50%;
-    margin-right: 10vw;
+    margin-right: 0vw;
   }
 
   .arrow_cl {
-    height: 16vw;
-    width: 4vw;
-    background-image: url(./Assets/Images/down_arrow.png);
+    height: 4.45vw;
+    width: 1.11vw;
+    background-image: url(./Assets/Images/right_arrow.png);
     background-size: 100%;
     background-repeat: no-repeat;
     background-position-y: 50%;
-    margin-right: 10vw;
+    margin-right: 0vw;
   }
 
   .lang_prop {
@@ -1456,7 +1461,7 @@ body {
   }
 
   .lang_prop_box {
-    margin-left: -4vw;
+    margin-left: -2.5vw;
   }
 
   .lang_img_1 {
