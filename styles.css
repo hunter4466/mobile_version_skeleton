@@ -345,7 +345,7 @@ body {
   width: 100.2vw;
   height: 300vw;
   z-index: -1;
-  margin-left: -0.5vw;
+  margin-left: -5.8vw;
   margin-top: -10vw;
   border-top-right-radius: 10vw;
 }
@@ -1166,7 +1166,7 @@ body {
     width: 99.4vw;
     height: 90vw;
     z-index: -1;
-    margin-left: 7.5vw;
+    margin-left: -8.6vw;
     margin-top: -10vw;
     border-top-right-radius: 10vw;
   }
