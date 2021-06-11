@@ -1377,7 +1377,7 @@ body {
     width: fit-content;
     margin-bottom: 1vw;
     margin-top: 1vw;
-    margin-left: 0vw;
+    margin-left: 0;
     user-select: none;
     color: #396df2;
   }
@@ -1401,7 +1401,7 @@ body {
     font-size: 1.67vw;
     width: 40vw;
     border-bottom-style: solid;
-    border-color: #DFE1E6;
+    border-color: #dfe1e6;
     border-width: 0.2vw;
   }
 
@@ -1432,7 +1432,7 @@ body {
     background-size: 100%;
     background-repeat: no-repeat;
     background-position-y: 50%;
-    margin-right: 0vw;
+    margin-right: 0;
   }
 
   .arrow_cl {
@@ -1442,7 +1442,7 @@ body {
     background-size: 100%;
     background-repeat: no-repeat;
     background-position-y: 50%;
-    margin-right: 0vw;
+    margin-right: 0;
   }
 
   .lang_prop {
