@@ -104,7 +104,7 @@ body {
   width: 88vw;
 }
 
-.about h3 {
+.about h2 {
   color: #344563;
   font-family: 'Poppins', sans-serif;
   font-style: normal;
@@ -496,7 +496,7 @@ body {
   float: left;
 }
 
-.languages h5 {
+.languages h3 {
   font-size: 4vw;
   color: #6070ff;
   margin-left: 3vw;
@@ -536,13 +536,13 @@ body {
   width: 70vw;
 }
 
-.about_category h5 {
+.about_category h4 {
   margin-top: 0.1vw;
   margin-bottom: 0.1vw;
   height: 2vw;
 }
 
-.about_category_1 h5 {
+.about_category_1 h4 {
   margin-top: 0.1vw;
   margin-bottom: 0.1vw;
   height: 2vw;
@@ -920,7 +920,7 @@ body {
     height: 11vw;
   }
 
-  .about h3 {
+  .about h2 {
     color: #344563;
     font-family: 'Poppins', sans-serif;
     font-style: normal;
@@ -1389,7 +1389,7 @@ body {
     margin-right: 1vw;
   }
 
-  .languages h5 {
+  .languages h3 {
     font-size: 0.83vw;
     color: #6070ff;
     margin-left: 1vw;
@@ -1435,7 +1435,7 @@ body {
     border-width: 0.2vw;
   }
 
-  .about_category h5 {
+  .about_category h4 {
     margin-top: 1vw;
     color: #344563;
   }
@@ -1450,7 +1450,7 @@ body {
     border-width: 0.2vw;
   }
 
-  .about_category_1 h5 {
+  .about_category_1 h4 {
     margin-top: 1vw;
     color: #344563;
   }
