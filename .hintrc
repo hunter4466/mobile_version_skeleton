@@ -1,5 +1,4 @@
-  
-{
+  {
     "connector": {
       "name": "local",
       "options": {
