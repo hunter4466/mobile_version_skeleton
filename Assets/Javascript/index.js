@@ -40,7 +40,7 @@ for (let i = 0; i < links.length; i += 1) {
   });
 }
 
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+document.querySelectorAll('a[href^="#"]').forEach((anchor)=> {
   anchor.addEventListener('click', (event2) => {
     event2.preventDefault();
     document.querySelector(event2.currentTarget.getAttribute('href')).scrollIntoView({
