@@ -592,9 +592,6 @@ body {
   font-size: 5vw;
   margin: 2vw;
 }
-.button h3 a {
-  text-decoration: none;
-}
 
 .about_category {
   display: flex;
@@ -761,16 +758,17 @@ body {
   width: 15vw;
   height: 15vw;
 }
+
 .bg_elm_6 {
-  display:none;
+  display: none;
 }
 
 .bg_elm_7 {
-  display:none;
+  display: none;
 }
 
 .bg_elm_8 {
-  display:none;
+  display: none;
 }
 
 .title_2 {
@@ -1028,6 +1026,10 @@ body {
     height: 1.2vw;
     padding: 0;
     margin-left: -2vw;
+  }
+  
+  .button h3 a {
+    text-decoration: none;
   }
 
   .lets_connect a:hover {
@@ -1382,7 +1384,7 @@ body {
   }
 
   .preview {
-    background-size: fit-content(30vw);
+    background-size: fit-content;
     background-repeat: no-repeat;
     width: 36.94vw;
     height: 27.62vw;
@@ -1468,6 +1470,7 @@ body {
     height: 4.45vw;
     margin-left: -1vw;
   }
+
   .languages li {
     float: left;
     height: 2vw;
@@ -1490,7 +1493,7 @@ body {
     border-style: solid;
     border-width: 0.2vw;
     border-color: #396df2;
-    width: -moz-fit-content(30vw);
+    width: -moz-fit-content;
     width: fit-content(30vw);
     margin-bottom: 1vw;
     margin-top: 1vw;
