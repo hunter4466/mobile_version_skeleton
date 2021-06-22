@@ -581,7 +581,7 @@ body {
   float: left;
 }
 
-.languages h3 {
+.languages h5 {
   font-size: 4vw;
   color: #6070ff;
   margin-left: 3vw;
@@ -1490,7 +1490,7 @@ body {
     margin-right: 1vw;
   }
 
-  .languages h3 {
+  .languages h5 {
     font-size: 0.83vw;
     color: #6070ff;
     margin-left: 1vw;
