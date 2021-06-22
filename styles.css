@@ -77,6 +77,18 @@ body {
   user-select: none;
 }
 
+.lets_connect_2 a {
+  color: #7f8cff;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 5vw;
+  line-height: 10vw;
+  margin-bottom: 5vw;
+  user-select: none;
+  text-decoration: none;
+}
+
 .display_menu ul li a {
   text-decoration: none;
   color: white;
@@ -188,18 +200,6 @@ body {
 }
 
 .lets_connect a {
-  color: #7f8cff;
-  font-family: 'Poppins', sans-serif;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 5vw;
-  line-height: 10vw;
-  margin-bottom: 5vw;
-  user-select: none;
-  text-decoration: none;
-}
-
-.lets_connect_2 a {
   color: #7f8cff;
   font-family: 'Poppins', sans-serif;
   font-style: normal;
@@ -940,18 +940,18 @@ body {
     height: 2.5vw;
     margin-right: 6vw;
   }
-    
-  .button h3 a {
-    text-decoration: none;
-  }
 
   .links a {
-    color: #344563;
+    color: #53575f;
     text-decoration: none;
     margin-left: 2.22vw;
     font-size: 1vw;
     transition: transform 0.3s ease;
     cursor: pointer;
+  }
+    
+  .button h3 a {
+    text-decoration: none;
   }
 
   .links a:hover {
