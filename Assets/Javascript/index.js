@@ -1,6 +1,6 @@
-const Menu_Btn = document.getElementById('Menu_Btn');
-const Display_Menu = document.getElementById('Display_Menu');
-const Close_Menu_Btn = document.getElementById('Close_Menu_Btn');
+const MenuBtn = document.getElementById('MenuBtn');
+const DisplayMenu = document.getElementById('DisplayMenu');
+const CloseMenuBtn = document.getElementById('CloseMenuBtn');
 
 const sec = [];
 for (let i = 1; i < 6; i += 1) {
@@ -12,31 +12,31 @@ for (let i = 1; i < 4; i += 1) {
   links.push(document.getElementById(`menu_link_${i}`));
 }
 
-Menu_Btn.addEventListener('click', (event) => {
+MenuBtn.addEventListener('click', (event) => {
   event.preventDefault();
-  Display_Menu.style = 'display: flex; animation-name: menu_display_anim;';
+  DisplayMenu.style = 'display: flex; animation-name: menu_display_anim;';
   for (let i = 0; i < sec.length; i += 1) {
     sec[i].style = 'filter: blur(4px); -webkit-filter: blur(4px);';
   }
 });
 
-Close_Menu_Btn.addEventListener('click', (Event) => {
+CloseMenuBtn.addEventListener('click', (Event) => {
   Event.preventDefault();
-  Display_Menu.style = 'display: flex; animation-name: menu_close_anim;';
+  DisplayMenu.style = 'display: flex; animation-name: menu_close_anim;';
   for (let i = 0; i < sec.length; i += 1) {
     sec[i].style = '';
   }
-  setTimeout(() => { Display_Menu.style = 'display: none;' }, 450);
+  setTimeout(() => { DisplayMenu.style = 'display: none;'; }, 450);
 });
 
 for (let i = 0; i < links.length; i += 1) {
   links[i].addEventListener('click', (Event) => {
     Event.preventDefault();
-    Display_Menu.style = 'display: flex; animation-name: menu_close_anim;';
+    DisplayMenu.style = 'display: flex; animation-name: menu_close_anim;';
     for (let i = 0; i < sec.length; i += 1) {
       sec[i].style = '';
     }
-    setTimeout(() => { Display_Menu.style = 'display: none;'; }, 450);
+    setTimeout(() => { DisplayMenu.style = 'display: none;'; }, 450);
   });
 }
 
