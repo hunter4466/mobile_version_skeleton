@@ -1,57 +1,50 @@
-const menu_btn = document.getElementById('menu_btn')
-const display_menu = document.getElementById('display_menu')
-const close_menu_btn = document.getElementById('close_menu_btn')
+const MenuBtn = document.getElementById('MenuBtn');
+const DisplayMenu = document.getElementById('DisplayMenu');
+const CloseMenuBtn = document.getElementById('CloseMenuBtn');
 
-let sec = []
-for(let i = 1;i<6;i++){
-    sec.push(document.getElementById(`sec_${i}`))
+const sec = [];
+for (let i = 1; i < 6; i += 1) {
+  sec.push(document.getElementById(`sec_${i}`));
 }
 
-let links = []
-for(let i = 1;i<4;i+=1){
-    links.push(document.getElementById(`menu_link_${i}`))
+const links = [];
+for (let i = 1; i < 4; i += 1) {
+  links.push(document.getElementById(`menu_link_${i}`));
 }
 
-menu_btn.addEventListener('click',(event)=>{
-    console.log('button works')
-    event.preventDefault();
-    display_menu.style = "display: flex; animation-name: menu_display_anim;"
-    for(let i = 0;i<sec.length;i+=1){
-        sec[i].style = 'filter: blur(4px); -webkit-filter: blur(4px);'
-    }
-})
+MenuBtn.addEventListener('click', (event) => {
+  event.preventDefault();
+  DisplayMenu.style = 'display: flex; animation-name: menu_display_anim;';
+  for (let i = 0; i < sec.length; i += 1) {
+    sec[i].style = 'filter: blur(4px); -webkit-filter: blur(4px);';
+  }
+});
 
-close_menu_btn.addEventListener('click',(Event)=>{
+CloseMenuBtn.addEventListener('click', (Event) => {
+  Event.preventDefault();
+  DisplayMenu.style = 'display: flex; animation-name: menu_close_anim;';
+  for (let i = 0; i < sec.length; i += 1) {
+    sec[i].style = '';
+  }
+  setTimeout(() => { DisplayMenu.style = 'display: none;'; }, 450);
+});
+
+for (let i = 0; i < links.length; i += 1) {
+  links[i].addEventListener('click', (Event) => {
     Event.preventDefault();
-    display_menu.style = "display: flex; animation-name: menu_close_anim;"
-    for(let i = 0;i<sec.length;i+=1){
-        sec[i].style = ''
+    DisplayMenu.style = 'display: flex; animation-name: menu_close_anim;';
+    for (let i = 0; i < sec.length; i += 1) {
+      sec[i].style = '';
     }
-    setTimeout(()=>{display_menu.style = "display: none;"},450)
-})
-
-for(let i = 0;i<links.length;i+=1){
-    links[i].addEventListener('click',(Event)=>{
-        Event.preventDefault();
-        display_menu.style = "display: flex; animation-name: menu_close_anim;"
-        for(let i = 0;i<sec.length;i+=1){
-            sec[i].style = ''
-        }
-        setTimeout(()=>{display_menu.style = "display: none;"},450)
-    })
+    setTimeout(() => { DisplayMenu.style = 'display: none;'; }, 450);
+  });
 }
 
-
-
-
-console.log('javascript loaded')
-
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener('click', function (e) {
-        e.preventDefault();
-
-        document.querySelector(this.getAttribute('href')).scrollIntoView({
-            behavior: 'smooth'
-        });
+document.querySelectorAll('a[href^="#"]').forEach((event) => {
+  event.addEventListener('click', (event) => {
+    event.preventDefault();
+    document.querySelector(this.getAttribute('href')).scrollIntoView({
+      behavior: 'smooth',
     });
+  });
 });
