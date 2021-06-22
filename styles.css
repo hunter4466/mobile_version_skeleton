@@ -18,7 +18,7 @@ body {
   position: absolute;
   display: flex;
   width: 95vw;
-  height: fit-content;
+  height: fit-content(30vw);
   flex-direction: column;
   margin: 0.1vw;
 }
@@ -40,7 +40,7 @@ body {
   0%{left: 100vw;
     width: 0vw;
     height: 0vh;}
-    
+
   100%{left: 0vw;
     width: 100vw;
     height: 100vh;}
@@ -391,7 +391,7 @@ body {
 .work_grid {
   font-family: 'Poppins', sans-serif;
   position: relative;
-  height: fit-content;
+  height: fit-content(30vw);
   grid-template-rows: 147vw 147vw 147vw;
   margin-bottom: 30vw;
 }
@@ -399,7 +399,7 @@ body {
 .work_grid_final {
   font-family: 'Poppins', sans-serif;
   position: relative;
-  height: fit-content;
+  height: fit-content(30vw);
   grid-template-rows: 147vw 147vw 147vw;
 }
 
@@ -408,7 +408,7 @@ body {
   display: flex;
   flex-direction: column;
   width: 87.2vw;
-  height: fit-content;
+  height: fit-content(30vw);
   margin-left: 6vw;
   margin-top: 10vw;
   border-color: #dfe1e6;
@@ -434,7 +434,7 @@ body {
   display: flex;
   flex-direction: column;
   width: 87.2vw;
-  height: fit-content;
+  height: fit-content(30vw);
   margin-left: 5.5vw;
   margin-top: 10vw;
 }
@@ -444,7 +444,7 @@ body {
   display: flex;
   flex-direction: column;
   width: 87.2vw;
-  height: fit-content;
+  height: fit-content(30vw);
   margin-left: 6vw;
   margin-top: 10vw;
   border-color: #dfe1e6;
@@ -459,7 +459,7 @@ body {
   display: flex;
   flex-direction: column;
   width: 87.2vw;
-  height: fit-content;
+  height: fit-content(30vw);
   margin-left: 5.5vw;
   margin-top: 10vw;
 }
@@ -512,7 +512,7 @@ body {
 .title {
   margin-top: 1vw;
   width: 78.66vw;
-  height: fit-content;
+  height: fit-content(30vw);
 }
 
 .title h1 {
@@ -553,7 +553,7 @@ body {
 }
 
 .description {
-  height: fit-content;
+  height: fit-content(30vw);
 }
 
 .description p {
@@ -582,7 +582,7 @@ body {
   border-style: solid;
   border-width: 0.2vw;
   border-color: #396df2;
-  width: fit-content;
+  width: fit-content(30vw);
   margin-bottom: 5vw;
   margin-top: 5vw;
   color: #396df2;
@@ -777,7 +777,7 @@ body {
   color: white;
   margin-top: 27vw;
   margin-left: 12.5vw;
-  height: fit-content;
+  height: fit-content(30vw);
   z-index: 1;
 }
 
@@ -788,7 +788,7 @@ body {
 
 .contact_resume {
   margin-left: 8vw;
-  height: fit-content;
+  height: fit-content(30vw);
   width: 70vw;
   color: white;
   z-index: 1;
@@ -827,7 +827,7 @@ body {
   border-style: solid;
   border-width: 0.2vw;
   border-color: #396df2;
-  width: fit-content;
+  width: fit-content(30vw);
   margin-bottom: 5vw;
   margin-top: 2vw;
   z-index: 1;
@@ -862,7 +862,7 @@ body {
     position: absolute;
     display: flex;
     width: 95vw;
-    height: fit-content;
+    height: fit-content(30vw);
     flex-direction: column;
     margin: 0.1vw;
   }
@@ -1252,7 +1252,7 @@ body {
   .work_grid {
     font-family: 'Poppins', sans-serif;
     position: relative;
-    height: fit-content;
+    height: fit-content(30vw);
     grid-template-rows: 147vw 147vw 147vw;
     margin-bottom: 5vw;
   }
@@ -1260,7 +1260,7 @@ body {
   .work_grid_final {
     font-family: 'Poppins', sans-serif;
     position: relative;
-    height: fit-content;
+    height: fit-content(30vw);
     grid-template-rows: 147vw 147vw 147vw;
     margin-bottom: 0;
   }
@@ -1382,7 +1382,7 @@ body {
   }
 
   .preview {
-    background-size: fit-content;
+    background-size: fit-content(30vw);
     background-repeat: no-repeat;
     width: 36.94vw;
     height: 27.62vw;
@@ -1408,7 +1408,7 @@ body {
   .title {
     margin-top: 2vw;
     width: 30vw;
-    height: fit-content;
+    height: fit-content(30vw);
     margin-left: 0;
   }
 
@@ -1453,7 +1453,7 @@ body {
   }
 
   .description {
-    height: fit-content;
+    height: fit-content(30vw);
     margin-left: 0;
     width: 25vw;
   }
@@ -1468,7 +1468,6 @@ body {
     height: 4.45vw;
     margin-left: -1vw;
   }
-
   .languages li {
     float: left;
     height: 2vw;
@@ -1491,8 +1490,8 @@ body {
     border-style: solid;
     border-width: 0.2vw;
     border-color: #396df2;
-    width: -moz-fit-content;
-    width: fit-content;
+    width: -moz-fit-content(30vw);
+    width: fit-content(30vw);
     margin-bottom: 1vw;
     margin-top: 1vw;
     margin-left: 0;
@@ -1729,7 +1728,7 @@ body {
     color: white;
     margin-top: 7vw;
     margin-left: 6vw;
-    height: fit-content;
+    height: fit-content(30vw);
     z-index: 1;
   }
 
