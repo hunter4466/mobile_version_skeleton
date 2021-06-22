@@ -40,10 +40,9 @@ for (let i = 0; i < links.length; i += 1) {
   });
 }
 
-document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
-  anchor.addEventListener('click', (e) => {
-    e.preventDefault();
-
+document.querySelectorAll('a[href^="#"]').forEach((event) => {
+  event.addEventListener('click', (event) => {
+    event.preventDefault();
     document.querySelector(this.getAttribute('href')).scrollIntoView({
       behavior: 'smooth',
     });
