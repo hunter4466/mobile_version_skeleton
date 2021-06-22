@@ -89,6 +89,18 @@ body {
   text-decoration: none;
 }
 
+.lets_connect a {
+  color: #7f8cff;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 5vw;
+  line-height: 10vw;
+  margin-bottom: 5vw;
+  user-select: none;
+  text-decoration: none;
+}
+
 .display_menu ul li a {
   text-decoration: none;
   color: white;
@@ -199,17 +211,6 @@ body {
   user-select: none;
 }
 
-.lets_connect a {
-  color: #7f8cff;
-  font-family: 'Poppins', sans-serif;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 5vw;
-  line-height: 10vw;
-  margin-bottom: 5vw;
-  user-select: none;
-  text-decoration: none;
-}
 
 .lets_connect a:hover {
   color: #7f8cff94;
@@ -949,7 +950,7 @@ body {
     transition: transform 0.3s ease;
     cursor: pointer;
   }
-    
+
   .button h3 a {
     text-decoration: none;
   }
