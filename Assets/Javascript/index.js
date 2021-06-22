@@ -1,6 +1,6 @@
-const Menu_btn = document.getElementById('Menu_btn');
-const Display_menu = document.getElementById('Display_menu');
-const Close_menu_btn = document.getElementById('Close_menu_btn');
+const Menu_Btn = document.getElementById('Menu_Btn');
+const Display_Menu = document.getElementById('Display_Menu');
+const Close_Menu_Btn = document.getElementById('Close_Menu_Btn');
 
 const sec = [];
 for (let i = 1; i < 6; i += 1) {
@@ -12,31 +12,31 @@ for (let i = 1; i < 4; i += 1) {
   links.push(document.getElementById(`menu_link_${i}`));
 }
 
-Menu_btn.addEventListener('click', (event) => {
+Menu_Btn.addEventListener('click', (event) => {
   event.preventDefault();
-  Display_menu.style = 'display: flex; animation-name: menu_display_anim;';
+  Display_Menu.style = 'display: flex; animation-name: menu_display_anim;';
   for (let i = 0; i < sec.length; i += 1) {
     sec[i].style = 'filter: blur(4px); -webkit-filter: blur(4px);';
   }
 });
 
-Close_menu_btn.addEventListener('click', (Event) => {
+Close_Menu_Btn.addEventListener('click', (Event) => {
   Event.preventDefault();
-  Display_menu.style = 'display: flex; animation-name: menu_close_anim;';
-  for (let i = 0; i < sec.length; i += 1){
-    sec[i].style = ''
+  Display_Menu.style = 'display: flex; animation-name: menu_close_anim;';
+  for (let i = 0; i < sec.length; i += 1) {
+    sec[i].style = '';
   }
-  setTimeout(()=>{Display_menu.style = 'display: none;'},450)
+  setTimeout(() => { Display_Menu.style = 'display: none;' }, 450);
 });
 
-for(let i = 0; i < links.length; i += 1){
+for (let i = 0; i < links.length; i += 1) {
   links[i].addEventListener('click', (Event) => {
     Event.preventDefault();
-    Display_menu.style = 'display: flex; animation-name: menu_close_anim;';
+    Display_Menu.style = 'display: flex; animation-name: menu_close_anim;';
     for (let i = 0; i < sec.length; i += 1) {
       sec[i].style = '';
     }
-    setTimeout(() => { Display_menu.style = 'display: none;'; }, 450);
+    setTimeout(() => { Display_Menu.style = 'display: none;'; }, 450);
   });
 }
 
