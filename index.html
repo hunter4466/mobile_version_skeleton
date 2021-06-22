@@ -17,22 +17,28 @@
 </head>
 
 <body class="flexbox">
-    <section class="work_grid">
-        <header class="header">
-            <nav class="menu_title">
-                <a href="#"><img alt="Logo"  src="Assets/Images/my_logo.png"></a>
-            </nav>
-            <div class="menu_btn">
-                <img alt="Menu_btn_element" class="menu_btn_elm" src="Assets/Images/menu.png">
-                <img alt="Menu_btn_element" class="menu_btn_elm" src="Assets/Images/menu.png">
-                <img alt="Menu_btn_element" class="menu_btn_elm" src="Assets/Images/menu.png">
-            </div>
-            <div class="links">
-                <a href="#">Portfolio</a>
-                <a href="#">About</a>
-                <a href="#">Contact</a>
-            </div>
-        </header>
+    <div class="display_menu" id="display_menu">
+        <div id="close_menu_btn" class="close_menu_btn"></div>
+        <ul>
+            <li><a id="menu_link_1" href="#sec_3">Portfolio</a></li>
+            <li><a id="menu_link_2" href="#sec_4">About</a></li>
+            <li><a id="menu_link_3" href="#sec_5">Contact</a></li>
+        </ul>
+    </div>
+    <section class="header">
+        <nav class="menu_title">
+            <a href="#"><img alt="Logo"  src="Assets/Images/my_logo.png"></a>
+        </nav>
+        <div id="menu_btn" class="menu_btn">
+            <img alt="Menu_btn_element" class="menu_btn_elm" src="Assets/Images/menu.png">
+        </div>
+        <div class="links">
+            <a href="#">Portfolio</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+        </div>
+    </section>
+    <section class="work_grid" id="sec_1">
         <div class="content_body">
             <div class="greetings">
                 <h1>I'm Mario Glad to see you!</h1>
@@ -82,9 +88,8 @@
                 </ul>         
             </section>
         </div>
-        
     </section>
-    <section>
+    <section  id="sec_2">
         <h3 class="hidden">.</h3>
         <div class="elm_1">.</div>
         <div class="elm_2">.</div>
@@ -98,7 +103,7 @@
         <div class="elm_10">.</div>
 
     </section>
-    <section class="work_grid">
+    <section class="work_grid"  id="sec_3">
     <ul>
         <li class="box">
                 <div class="prev_1 preview sub_box"></div>
@@ -211,7 +216,7 @@
         </li>
     </ul>
     </section>
-    <section class="work_grid">
+    <section class="work_grid"  id="sec_4">
     <ul>
         <li class="box_about">
             <div class="box_about_bg"></div>
@@ -307,7 +312,7 @@
     </ul>
 </section>
 
-<section class="work_grid_final">
+<section class="work_grid_final" id="sec_5">
      <div class="box_last">
             <div class="contact_background">
                 <div class="bg_elm_1">.</div>
@@ -333,5 +338,6 @@
             </form>
     </div>
 </section>
+<script type="text/javascript" src="./Assets/Javascript/index.js"></script>
 </body>
 </html>
