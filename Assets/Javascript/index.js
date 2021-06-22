@@ -20,7 +20,6 @@ menu_btn.addEventListener('click',(event)=>{
         sec[i].style = 'filter: blur(4px); -webkit-filter: blur(4px);'
     }
 })
-
 close_menu_btn.addEventListener('click',(Event)=>{
     Event.preventDefault();
     display_menu.style = "display: flex; animation-name: menu_close_anim;"
