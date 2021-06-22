@@ -503,22 +503,6 @@ body {
   transform: scale(1.11, 1.15);
 }
 
-.prev_1 {
-  background-image: url(./Assets/Images/portfolio_pictures/sn1.png);
-}
-
-.prev_2 {
-  background-image: url(./Assets/Images/portfolio_pictures/sn2.png);
-}
-
-.prev_3 {
-  background-image: url(./Assets/Images/portfolio_pictures/sn3.png);
-}
-
-.prev_4 {
-  background-image: url(./Assets/Images/portfolio_pictures/sn4.png);
-}
-
 .title {
   margin-top: 1vw;
   width: 78.66vw;
@@ -1399,22 +1383,6 @@ body {
     width: 36.94vw;
     height: 27.62vw;
     margin: 2vw;
-  }
-
-  .prev_1 {
-    background-image: url(./Assets/Images/portfolio_pictures/sn1.png);
-  }
-
-  .prev_2 {
-    background-image: url(./Assets/Images/portfolio_pictures/sn2.png);
-  }
-
-  .prev_3 {
-    background-image: url(./Assets/Images/portfolio_pictures/sn3.png);
-  }
-
-  .prev_4 {
-    background-image: url(./Assets/Images/portfolio_pictures/sn4.png);
   }
 
   .title {
