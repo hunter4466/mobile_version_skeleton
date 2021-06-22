@@ -940,6 +940,10 @@ body {
     height: 2.5vw;
     margin-right: 6vw;
   }
+    
+  .button h3 a {
+    text-decoration: none;
+  }
 
   .links a {
     color: #344563;
@@ -1026,10 +1030,6 @@ body {
     height: 1.2vw;
     padding: 0;
     margin-left: -2vw;
-  }
-  
-  .button h3 a {
-    text-decoration: none;
   }
 
   .lets_connect a:hover {
@@ -1384,7 +1384,7 @@ body {
   }
 
   .preview {
-    background-size:contain;
+    background-size: contain;
     background-repeat: no-repeat;
     width: 36.94vw;
     height: 27.62vw;
