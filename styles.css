@@ -37,12 +37,13 @@ body {
   animation-duration: 0.5s;
 }
 @keyframes menu_display_anim {
-  0%{left:100vw;
+  0%{left: 100vw;
     width: 0vw;
-    height:0vh;}
-  100%{left:0vw;
+    height: 0vh;}
+    
+  100%{left: 0vw;
     width: 100vw;
-    height:100vh;}
+    height: 100vh;}
 }
 @keyframes menu_close_anim {
   0%{left:0vw;
