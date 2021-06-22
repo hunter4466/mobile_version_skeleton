@@ -37,21 +37,30 @@ body {
   animation-duration: 0.5s;
 }
 @keyframes menu_display_anim {
-  0%{left: 100vw;
+  0%{
+    left: 100vw;
     width: 0.001vw;
-    height: 0.001vh;}
+    height: 0.001vh;
+  }
 
-  100%{left: 0vw;
+  100%{
+    left: 0vw;
     width: 100vw;
-    height: 100vh;}
+    height: 100vh;
+  }
 }
 @keyframes menu_close_anim {
-  0%{left:0vw;
+  0%{
+    left: 0vw;
     width: 100vw;
-    height:100vh;}
-  100%{left:100vw;
+    height:100vh;
+  }
+  
+  100%{
+    left: 100vw;
     width: 0.001vw;
-    height: 0.001vh;}
+    height: 0.001vh;
+  }
 }
 
 .display_menu ul {
