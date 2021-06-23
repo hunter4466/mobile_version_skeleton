@@ -182,6 +182,9 @@ for (let i = 0; i < workInformation.length; i += 1) {
     const buttonsDivBtn2 = create('div');
     const button2Content1 = create('h3');
     const button2Content2 = create('img');
+    const mainBox = create('div');
+    const leftBox = create('div');
+    const rightBox = create('div');
 
     detImage.src = workInformation[i].imagePath;
     detImage.alt = 'preview';
@@ -195,14 +198,17 @@ for (let i = 0; i < workInformation.length; i += 1) {
     elmArray.push([detFeatures, detdot1, 'det_feature_dot']);
     elmArray.push([detFeatures, detFeat2, 'det_feature det_f_1', workInformation[i].features[1]]);
     elmArray.push([detFeatures, detdot2, 'det_feature_dot']);
-    elmArray.push([detFeatures, detFeat3, 'det_feature det_f_1', workInformation[i].features[2]]);
     elmArray.push([detailBackground, detImage, 'detail_img']);
-    elmArray.push([detailBackground, detDescription, 'detail_descr', workInformation[i].detailText]);
-    elmArray.push([detailBackground, languagesDiv, 'language_box']);
+    elmArray.push([detailBackground, mainBox, 'main_box']);
+    elmArray.push([mainBox, leftBox, 'left_box']);
+    elmArray.push([mainBox, rightBox, 'right_box']);
+    elmArray.push([detFeatures, detFeat3, 'det_feature det_f_1', workInformation[i].features[2]]);
+    elmArray.push([leftBox, detDescription, 'detail_descr', workInformation[i].detailText]);
+    elmArray.push([rightBox, languagesDiv, 'language_box']);
     elmArray.push([languagesDiv, languagesDivLang1, 'language_prop', workInformation[i].languages[0]]);
     elmArray.push([languagesDiv, languagesDivLang2, 'language_prop', workInformation[i].languages[1]]);
     elmArray.push([languagesDiv, languagesDivLang3, 'language_prop', workInformation[i].languages[2]]);
-    elmArray.push([detailBackground, buttonsDiv, 'det_buttons_div']);
+    elmArray.push([rightBox, buttonsDiv, 'det_buttons_div']);
     elmArray.push([buttonsDiv, buttonsDivBtn1, 'det_button']);
     elmArray.push([buttonsDiv, buttonsDivBtn2, 'det_button']);
     elmArray.push([buttonsDivBtn1, button1Content1, 'det_button_text', 'See live']);
