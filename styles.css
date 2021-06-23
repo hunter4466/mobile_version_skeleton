@@ -888,10 +888,10 @@ body {
 .det_feature {
   font-size: 4vw;
   margin: 0.01vw 2vw 0.01vw 2vw;
-  color: #7A869A;
+  color: #7a869a;
 }
 
-.det_feature:hover{
+.det_feature:hover {
   color: #344563
 }
 
@@ -922,15 +922,13 @@ body {
 }
 
 .detail_img {
-  width:80vw;
+  width: 80vw;
 }
 
 .detail_pre_background {
-  Position: fixed;
+  position: fixed;
   width: 100vw;
   height: 100vh;
-  left: 0vw;
-  top: 0vh;
   background-color: rgb(0,0,0);
   opacity: 0.4;
   z-index: 4;
