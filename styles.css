@@ -938,31 +938,39 @@ body {
 
 @keyframes background-open {
   0%{
-    opacity:0
+    opacity:0;
     }
 
   100%{
-    opacity:0.4
-    }
+    opacity: 0.4;
+  }
 }
 
 @keyframes background-close {
-  0%{opacity:0.4}
-  50%{opacity:0.4}
-  100%{opacity:0}
+  0%{
+    opacity:0.4;
+    }
+
+  50%{
+    opacity:0.4;
+    }
+
+  100%{
+    opacity:0;
+    }
 }
 
 .detail_background {
-  box-shadow: 1vw 1vw 1vw 1vw rgba(0,0,0,0.2);
+  box-shadow: 1vw 1vw 1vw 1vw rgba(0, 0, 0, 0.2);
   background: white;
   position: fixed;
   border-radius: 3vw;
-  left:5vw;
-  top:20vw;
+  left: 5vw;
+  top: 20vw;
   width: 80vw;
   height: fit-content;
   z-index: 4;
-  padding: 5vw
+  padding: 5vw;
 }
 
 @keyframes detail_open {
