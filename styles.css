@@ -834,6 +834,151 @@ body {
   z-index: 2;
 }
 
+/* ---------------------------------- detail mobile styles --------------------- */
+.detail_title {
+  color:#172B4D;
+  font-size: 7vw;
+}
+.detail_sec {
+  display:inline;
+}
+.language_box {
+  display:flex;
+  flex-direction: row;
+}
+
+.language_prop {
+  margin-right:3vw;
+  font-size:4vw;
+  color: #6070FF;
+}
+
+.detail_descr {
+  font-size: 3.5vw;
+}
+.det_button {
+  display: flex;
+  flex-direction: row;
+  margin-right: 4vw;
+  border-color: #396DF2;
+  border-style: solid;
+  border-radius: 2vw;
+  border-width: 0.4vw;
+  height: 8vw;
+  width:38vw;
+  padding: 1vw 1vw 1vw 1vw;
+}
+.detail_features{
+  display:flex;
+  flex-direction: row;
+  margin-bottom: 4vw;
+}
+.det_feature_dot{
+  width: 2vw;
+  height: 2vw;
+  margin-top: 2vw;
+}
+.det_feature{
+  font-size:4vw;
+  margin: 0vw 2vw 0vw 2vw;
+  color: #7A869A;
+}
+.det_feature:hover{
+  color: #344563
+}
+.det_buttons_div{
+  display:flex;
+  flex-direction: row;
+  margin: 0.01vw;
+  margin-top: 0vw;
+}
+.det_button_text {
+  color: #396DF2;
+  margin: 1.8vw;
+  font-size: 3.8vw;
+}
+.det_button_icon {
+  margin-top: 1vw;
+  margin-left: 2vw;
+  width: 5vw;
+  height: 5vw;
+}
+.det_close_btn {
+  position: absolute;
+  left:80vw;
+  top:8vw;
+}
+.detail_img {
+  width:80vw;
+}
+.detail_pre_background{
+  Position:fixed;
+  width: 100vw;
+  height:100vh;
+  left:0vw;
+  top:0vh;
+  background-color: rgb(0,0,0);
+  opacity: 0.4;
+  z-index:4;
+}
+@keyframes background-open {
+  0%{opacity:0}
+  100%{opacity:0.4}
+}
+@keyframes background-close {
+  0%{opacity:0.4}
+  50%{opacity:0.4}
+  100%{opacity:0}
+}
+.detail_background {
+  box-shadow: 1vw 1vw 1vw 1vw rgba(0,0,0,0.2);
+  background: white;
+  position: fixed;
+  border-radius: 3vw;
+  left:5vw;
+  top:20vw;
+  width: 80vw;
+  height: fit-content;
+  z-index:4;
+  padding: 5vw
+}
+
+@keyframes detail_open{
+  0% {
+    left: -200vw;
+  }
+  70% {
+    left: 7vw;
+  }
+  80% {
+    left: 3vw;
+  }
+  90% {
+    left: 6vw;
+  }
+  100% {
+    left: 5vw;
+  }
+}
+@keyframes detail_close{
+  0% {
+    left: 10vw;
+  }
+  25% {
+    left: 50vw;
+  }
+  50% {
+    left: -200vw;
+  }
+  100% {
+    left: -200vw;
+  }
+
+}
+
+
+/* ---------------------------------- end of detail mobile styles --------------------- */
+
 /* ----------------------------- DESKTOP VERSION ------------------ */
 
 @media (min-width: 1024px) {
