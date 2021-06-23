@@ -13,7 +13,6 @@ const workInformation = [{
   features: ['CANOPY', 'Back End Dev', '2015'],
   description: 'A daily selection of privately perzonalized reads; no account or sign-ups required.',
   languages: ['html', 'css', 'javascript'],
-  buttonText: 'See Project',
   detailText: " Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent ",
 },
 {
@@ -22,7 +21,6 @@ const workInformation = [{
   features: ['CANOPY', 'Back End Dev', '2015'],
   description: 'A daily selection of privately perzonalized reads; no account or sign-ups required.',
   languages: ['html', 'css', 'javascript'],
-  buttonText: 'See Project',
   detailText: " Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent ",
 },
 {
@@ -31,7 +29,6 @@ const workInformation = [{
   features: ['CANOPY', 'Back End Dev', '2015'],
   description: 'A daily selection of privately perzonalized reads; no account or sign-ups required.',
   languages: ['html', 'css', 'javascript'],
-  buttonText: 'See Project',
   detailText: " Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent ",
 },
 {
@@ -40,7 +37,6 @@ const workInformation = [{
   features: ['CANOPY', 'Back End Dev', '2015'],
   description: 'A daily selection of privately perzonalized reads; no account or sign-ups required.',
   languages: ['html', 'css', 'javascript'],
-  buttonText: 'See Project',
   detailText: " Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent ",
 },
 ];
@@ -147,7 +143,7 @@ for (let i = 0; i < workInformation.length; i += 1) {
   ElementsArray.push([languagesUlLi3, languagesUlLi3H5, null, workInformation[i].languages[2]]);
   ElementsArray.push([contentBox, buttonDiv, 'button item']);
   ElementsArray.push([buttonDiv, buttonDivH3]);
-  ElementsArray.push([buttonDivH3, buttonDivH3a, null, workInformation[i].buttonText]);
+  ElementsArray.push([buttonDivH3, buttonDivH3a, null, 'See Project']);
 
   if (i % 2 === 0) {
     workBox.className = 'box';
