@@ -1,256 +1,251 @@
-
-const workSection = document.getElementById('sec_3')
-const main_ul = document.createElement('ul')
-const workDetail = document.getElementById('detail_sec')
+const workSection = document.getElementById('sec_3');
+const mainUl = document.createElement('ul');
+const workDetail = document.getElementById('detail_sec');
 const sectObj = [];
-        for (let i = 1; i < 6; i += 1) {
-        sectObj.push(document.getElementById(`sec_${i}`));
-        }
 
-const workInformation = [{imagePath:'./Assets/Images/portfolio_pictures/sn1.png',
-        title:'Tonic',
-        features:['CANOPY', 'Back End Dev', '2015'],
-        description:'A daily selection of privately perzonalized reads; no account or sign-ups required.',
-        languages:['html','css','javascript'],
-        buttonText:'See Project',
-        detailText:" Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent ",
-        },
-        {imagePath:'./Assets/Images/portfolio_pictures/sn2.png',
-        title:'Multi-Post Stories',
-        features:['CANOPY', 'Back End Dev', '2015'],
-        description:'A daily selection of privately perzonalized reads; no account or sign-ups required.',
-        languages:['html','css','javascript'],
-        buttonText:'See Project',
-        detailText:" Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent ",
-        },
-        {imagePath:'./Assets/Images/portfolio_pictures/sn3.png',
-        title:'Tonic',
-        features:['CANOPY', 'Back End Dev', '2015'],
-        description:'A daily selection of privately perzonalized reads; no account or sign-ups required.',
-        languages:['html','css','javascript'],
-        buttonText:'See Project',
-        detailText:" Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent ",
-        },
-        {imagePath:'./Assets/Images/portfolio_pictures/sn4.png',
-        title:'Multi-Post Stories',
-        features:['CANOPY', 'Back End Dev', '2015'],
-        description:'A daily selection of privately perzonalized reads; no account or sign-ups required.',
-        languages:['html','css','javascript'],
-        buttonText:'See Project',
-        detailText:" Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent ",
-        },
-        ]
-
-
-workSection.appendChild(main_ul)
-
-function create(obj) { return document.createElement(obj)}
-function constructor(obj) { 
-    for (let i = 0; i < obj.length; i += 1){
-        if(obj[i].length == 2){
-        obj[i][0].appendChild(obj[i][1])
-         }
-         else if(obj[i].length == 3){
-            obj[i][0].appendChild(obj[i][1])
-            obj[i][1].className = obj[i][2]
-         }
-         else if(obj[i].length == 4){
-             if(obj[i][2]==null){
-                obj[i][0].appendChild(obj[i][1])
-                obj[i][1].innerHTML = obj[i][3]
-             }
-             else{
-                obj[i][0].appendChild(obj[i][1])
-                obj[i][1].className = obj[i][2]
-                obj[i][1].innerHTML = obj[i][3]
-             }
-        }
-         else if(obj[i].length == 5){
-            if(obj[i][2]==null && obj[i][3]==null){
-               obj[i][0].appendChild(obj[i][1])
-               obj[i][1].id = obj[i][4]
-            }
-            else if(obj[i][2]==null){
-               obj[i][0].appendChild(obj[i][1])
-               obj[i][1].innerHTML = obj[i][3]
-               obj[i][1].id = obj[i][4]
-            }
-            else if(obj[i][3]==null){
-                obj[i][0].appendChild(obj[i][1])
-                obj[i][1].className = obj[i][2]
-                obj[i][1].id = obj[i][4]
-             }
-             else{
-                obj[i][0].appendChild(obj[i][1])
-                obj[i][1].innerHTML = obj[i][3]
-                obj[i][1].className = obj[i][2]
-                obj[i][1].id = obj[i][4]
-
-             }
-           
-        }
-         
+for (let i = 1; i < 6; i += 1) {
+  sectObj.push(document.getElementById(`sec_${i}`));
 }
+
+const workInformation = [{
+  imagePath: './Assets/Images/portfolio_pictures/sn1.png',
+  title: 'Tonic',
+  features: ['CANOPY', 'Back End Dev', '2015'],
+  description: 'A daily selection of privately perzonalized reads; no account or sign-ups required.',
+  languages: ['html', 'css', 'javascript'],
+  buttonText: 'See Project',
+  detailText: " Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent ",
+},
+{
+  imagePath: './Assets/Images/portfolio_pictures/sn2.png',
+  title: 'Multi-Post Stories',
+  features: ['CANOPY', 'Back End Dev', '2015'],
+  description: 'A daily selection of privately perzonalized reads; no account or sign-ups required.',
+  languages: ['html', 'css', 'javascript'],
+  buttonText: 'See Project',
+  detailText: " Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent ",
+},
+{
+  imagePath: './Assets/Images/portfolio_pictures/sn3.png',
+  title: 'Tonic',
+  features: ['CANOPY', 'Back End Dev', '2015'],
+  description: 'A daily selection of privately perzonalized reads; no account or sign-ups required.',
+  languages: ['html', 'css', 'javascript'],
+  buttonText: 'See Project',
+  detailText: " Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent ",
+},
+{
+  imagePath: './Assets/Images/portfolio_pictures/sn4.png',
+  title: 'Multi-Post Stories',
+  features: ['CANOPY', 'Back End Dev', '2015'],
+  description: 'A daily selection of privately perzonalized reads; no account or sign-ups required.',
+  languages: ['html', 'css', 'javascript'],
+  buttonText: 'See Project',
+  detailText: " Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent ",
+},
+];
+
+workSection.appendChild(mainUl);
+
+function create(obj) { return document.createElement(obj); }
+function constructor(obj) {
+  for (let i = 0; i < obj.length; i += 1) {
+    if (obj[i].length === 2) {
+      obj[i][0].appendChild(obj[i][1]);
+    } else if (obj[i].length === 3) {
+      const [a, b, c] = obj[i];
+      a.appendChild(b);
+      b.className = c;
+    } else if (obj[i].length === 4) {
+      const [a, b, c, d] = obj[i];
+      if (c == null) {
+        a.appendChild(b);
+        b.innerHTML = d;
+      } else {
+        a.appendChild(b);
+        b.className = c;
+        b.innerHTML = d;
+      }
+    } else if (obj[i].length === 5) {
+      const [a, b, c, d, e] = obj[i];
+      if (c == null && d == null) {
+        a.appendChild(b);
+        b.id = e;
+      } else if (c == null) {
+        a.appendChild(b);
+        b.innerHTML = d;
+        b.id = e;
+      } else if (d == null) {
+        obj[i][0].appendChild(b);
+        b.className = c;
+        b.id = e;
+      } else {
+        obj[i][0].appendChild(b);
+        b.innerHTML = d;
+        b.className = c;
+        b.id = e;
+      }
+    }
+  }
 }
+const ElementsArray = [];
 
 for (let i = 0; i < workInformation.length; i += 1) {
+  const workBox = create('li');
+  const imageBox = create('img');
+  const contentBox = create('div');
+  const titleBox = create('div');
+  const titleH1 = create('h1');
+  const featuresBox = create('ul');
+  const feature1Li = create('li');
+  const feature1LiH4 = create('h4');
+  const featureDot1 = create('li');
+  const featureDot1Div = create('div');
+  const feature2Li = create('li');
+  const featue2LiH4 = create('h4');
+  const featureDot2 = create('li');
+  const featureDot2Div = create('div');
+  const feature3Li = create('li');
+  const featue3LiH4 = create('h4');
+  const descriptionDiv = create('div');
+  const descriptionDivP = create('p');
+  const languagesUl = create('ul');
+  const languagesUlLi1 = create('li');
+  const languagesUlLi2 = create('li');
+  const languagesUlLi3 = create('li');
+  const languagesUlLi1H5 = create('h5');
+  const languagesUlLi2H5 = create('h5');
+  const languagesUlLi3H5 = create('h5');
+  const buttonDiv = create('div');
+  const buttonDivH3 = create('h3');
+  const buttonDivH3a = create('a');
 
-   let workBox = create('li')
-   let imageBox = create('img')
-   let contentBox = create('div')
-   let titleBox = create('div')
-   let titleH1 = create('h1')
-   let featuresBox = create('ul')
-   let feature1Li = create('li')
-   let feature1LiH4 = create('h4')
-   let featureDot1 = create('li')
-   let featureDot1Div = create('div')
-   let feature2Li = create('li')
-   let featue2LiH4 = create('h4')
-   let featureDot2 = create('li')
-   let featureDot2Div = create('div')
-   let feature3Li = create('li')
-   let featue3LiH4 = create('h4')
-   let descriptionDiv = create('div')
-   let descriptionDivP = create('p')
-   let languagesUl = create('ul')
-   let languagesUlLi1 = create('li')
-   let languagesUlLi2 = create('li')
-   let languagesUlLi3 = create('li')
-   let languagesUlLi1H5 = create('h5')
-   let languagesUlLi2H5 = create('h5')
-   let languagesUlLi3H5 = create('h5')
-   let buttonDiv = create('div')
-   let buttonDivH3 = create('h3')
-   let buttonDivH3a = create('a')
+  ElementsArray.push([mainUl, workBox]);
+  ElementsArray.push([workBox, imageBox, 'preview sub_box']);
+  ElementsArray.push([workBox, contentBox, 'sub_box_2']);
+  ElementsArray.push([contentBox, titleBox, 'title item']);
+  ElementsArray.push([titleBox, titleH1, null, workInformation[i].title]);
+  ElementsArray.push([contentBox, featuresBox, 'features item']);
+  ElementsArray.push([featuresBox, feature1Li]);
+  ElementsArray.push([featuresBox, featureDot1]);
+  ElementsArray.push([featuresBox, feature2Li]);
+  ElementsArray.push([featuresBox, featureDot2]);
+  ElementsArray.push([featuresBox, feature3Li]);
+  ElementsArray.push([feature1Li, feature1LiH4, 'feature_1', workInformation[i].features[0]]);
+  ElementsArray.push([featureDot1, featureDot1Div, 'dot']);
+  ElementsArray.push([feature2Li, featue2LiH4, 'feature_2', workInformation[i].features[1]]);
+  ElementsArray.push([featureDot2, featureDot2Div, 'dot']);
+  ElementsArray.push([feature3Li, featue3LiH4, 'feature_2', workInformation[i].features[2]]);
+  ElementsArray.push([contentBox, descriptionDiv, 'description item']);
+  ElementsArray.push([descriptionDiv, descriptionDivP, null, workInformation[i].description]);
+  ElementsArray.push([contentBox, languagesUl, 'languages item']);
+  ElementsArray.push([languagesUl, languagesUlLi1]);
+  ElementsArray.push([languagesUl, languagesUlLi2]);
+  ElementsArray.push([languagesUl, languagesUlLi3]);
+  ElementsArray.push([languagesUlLi1, languagesUlLi1H5, null, workInformation[i].languages[0]]);
+  ElementsArray.push([languagesUlLi2, languagesUlLi2H5, null, workInformation[i].languages[1]]);
+  ElementsArray.push([languagesUlLi3, languagesUlLi3H5, null, workInformation[i].languages[2]]);
+  ElementsArray.push([contentBox, buttonDiv, 'button item']);
+  ElementsArray.push([buttonDiv, buttonDivH3]);
+  ElementsArray.push([buttonDivH3, buttonDivH3a, null, workInformation[i].buttonText]);
 
-   let ElementsArray = [
-    [main_ul,workBox],
-    [workBox,imageBox,'preview sub_box'],
-    [workBox,contentBox,'sub_box_2'],
-    [contentBox,titleBox,'title item'],
-    [titleBox,titleH1,null,workInformation[i].title],
-    [contentBox,featuresBox,'features item'],
-    [featuresBox,feature1Li],
-    [featuresBox,featureDot1],
-    [featuresBox,feature2Li],
-    [featuresBox,featureDot2],
-    [featuresBox,feature3Li],
-    [feature1Li,feature1LiH4,'feature_1',workInformation[i].features[0]],
-    [featureDot1,featureDot1Div,'dot'],
-    [feature2Li,featue2LiH4,'feature_2',workInformation[i].features[1]],
-    [featureDot2,featureDot2Div,'dot'],
-    [feature3Li,featue3LiH4,'feature_2',workInformation[i].features[2]],
-    [contentBox,descriptionDiv,'description item'],
-    [descriptionDiv,descriptionDivP,null,workInformation[i].description],
-    [contentBox,languagesUl,'languages item'],
-    [languagesUl,languagesUlLi1],
-    [languagesUl,languagesUlLi2],
-    [languagesUl,languagesUlLi3],
-    [languagesUlLi1,languagesUlLi1H5,null,workInformation[i].languages[0]],
-    [languagesUlLi2,languagesUlLi2H5,null,workInformation[i].languages[1]],
-    [languagesUlLi3,languagesUlLi3H5,null,workInformation[i].languages[2]],
-    [contentBox,buttonDiv,'button item'],
-    [buttonDiv,buttonDivH3],
-    [buttonDivH3,buttonDivH3a,null,workInformation[i].buttonText]
-   ]
-   constructor(ElementsArray)
+  if (i % 2 === 0) {
+    workBox.className = 'box';
+  } else {
+    workBox.className = 'box_rev';
+  }
+  imageBox.src = workInformation[i].imagePath;
+  imageBox.alt = 'preview';
 
-    if(i %2 == 0){
-        workBox.className = 'box';
+  buttonDiv.addEventListener('click', (event) => {
+    event.preventDefault();
+    const detailPreBackground = create('div');
+    const detailBackground = create('div');
+    const detCloseBtn = create('img');
+    const detTitle = create('h1');
+    const detFeatures = create('div');
+    const detFeat1 = create('h1');
+    const detdot1 = create('img');
+    const detFeat2 = create('h1');
+    const detdot2 = create('img');
+    const detFeat3 = create('h1');
+    const detImage = create('img');
+    const detDescription = create('p');
+    const languagesDiv = create('div');
+    const languagesDivLang1 = create('h6');
+    const languagesDivLang2 = create('h6');
+    const languagesDivLang3 = create('h6');
+    const buttonsDiv = create('div');
+    const buttonsDivBtn1 = create('div');
+    const button1Content1 = create('h3');
+    const button1Content2 = create('img');
+    const buttonsDivBtn2 = create('div');
+    const button2Content1 = create('h3');
+    const button2Content2 = create('img');
+
+    detImage.src = workInformation[i].imagePath;
+    detImage.alt = 'preview';
+    let elmArray = [];
+    elmArray.push([workDetail, detailPreBackground, 'detail_pre_background']);
+    elmArray.push([workDetail, detailBackground, 'detail_background']);
+    elmArray.push([detailBackground, detCloseBtn, 'det_close_btn']);
+    elmArray.push([detailBackground, detTitle, 'detail_title', workInformation[i].title]);
+    elmArray.push([detailBackground, detFeatures, 'detail_features']);
+    elmArray.push([detFeatures, detFeat1, 'det_feature det_f_1', workInformation[i].features[0]]);
+    elmArray.push([detFeatures, detdot1, 'det_feature_dot']);
+    elmArray.push([detFeatures, detFeat2, 'det_feature det_f_1', workInformation[i].features[1]]);
+    elmArray.push([detFeatures, detdot2, 'det_feature_dot']);
+    elmArray.push([detFeatures, detFeat3, 'det_feature det_f_1', workInformation[i].features[2]]);
+    elmArray.push([detailBackground, detImage, 'detail_img']);
+    elmArray.push([detailBackground, detDescription, 'detail_descr', workInformation[i].detailText]);
+    elmArray.push([detailBackground, languagesDiv, 'language_box']);
+    elmArray.push([languagesDiv, languagesDivLang1, 'language_prop', workInformation[i].languages[0]]);
+    elmArray.push([languagesDiv, languagesDivLang2, 'language_prop', workInformation[i].languages[1]]);
+    elmArray.push([languagesDiv, languagesDivLang3, 'language_prop', workInformation[i].languages[2]]);
+    elmArray.push([detailBackground, buttonsDiv, 'det_buttons_div']);
+    elmArray.push([buttonsDiv, buttonsDivBtn1, 'det_button']);
+    elmArray.push([buttonsDiv, buttonsDivBtn2, 'det_button']);
+    elmArray.push([buttonsDivBtn1, button1Content1, 'det_button_text', 'See live']);
+    elmArray.push([buttonsDivBtn1, button1Content2, 'det_button_icon']);
+    elmArray.push([buttonsDivBtn2, button2Content1, 'det_button_text', 'See Source']);
+    elmArray.push([buttonsDivBtn2, button2Content2, 'det_button_icon']);
+    constructor(elmArray);
+    button1Content2.src = './Assets/Images/detail_btn1.svg';
+    button2Content2.src = './Assets/Images/detail_btn2.svg';
+    detCloseBtn.src = './Assets/Images/x2.svg';
+    detdot1.src = './Assets/Images/dot.png';
+    detdot2.src = './Assets/Images/dot.png';
+    detdot1.alt = 'dot';
+    detdot2.alt = 'dot';
+    button1Content2.alt = 'See live icon';
+    button2Content2.alt = 'See source';
+    detCloseBtn.alt = 'Close';
+    detailBackground.style = 'animation-name: detail_open; animation-duration: 0.5s;';
+    detailPreBackground.style = 'animation-name: background-open; animation-duration: 0.5s;';
+
+    for (let i = 0; i < 5; i += 1) {
+      sectObj[i].style = 'filter: blur(4px); -webkit-filter: blur(4px);';
     }
-    else{
-        workBox.className = 'box_rev';
-    }
-    imageBox.src = workInformation[i].imagePath
-    imageBox.alt = "preview"
-
-    buttonDiv.addEventListener('click',(event)=>{
-        let detailPreBackground = create('div')
-        let detailBackground = create('div')
-        let det_close_btn = create('img')
-        let detTitle = create('h1')
-        let detFeatures = create('div')
-        let detFeat1 = create('h1')
-        let detdot1 = create('img')
-        let detFeat2 = create('h1')
-        let detdot2 = create('img')
-        let detFeat3 = create('h1')
-        let detImage = create('img')
-        let detDescription = create('p')
-        let languagesDiv = create('div')
-        let languagesDivLang1 = create('h6')
-        let languagesDivLang2 = create('h6')
-        let languagesDivLang3 = create('h6')
-        let buttonsDiv = create('div')
-        let buttonsDivBtn1 = create('div')
-        let button1Content1 = create('h3')
-        let button1Content2 = create('img')
-        let buttonsDivBtn2 = create('div')
-        let button2Content1 = create('h3')
-        let button2Content2 = create('img')
-
-        detImage.src = workInformation[i].imagePath
-        detImage.alt = "preview"
-        elmArray = [
-            [workDetail,detailPreBackground,'detail_pre_background'],
-            [workDetail,detailBackground,'detail_background'],
-            [detailBackground,det_close_btn,'det_close_btn'],
-            [detailBackground,detTitle,'detail_title',workInformation[i].title],
-            [detailBackground,detFeatures,'detail_features'],
-            [detFeatures,detFeat1,'det_feature det_f_1',workInformation[i].features[0]],
-            [detFeatures,detdot1,'det_feature_dot'],
-            [detFeatures,detFeat2,'det_feature det_f_1',workInformation[i].features[1]],
-            [detFeatures,detdot2,'det_feature_dot'],
-            [detFeatures,detFeat3,'det_feature det_f_1',workInformation[i].features[2]],
-            [detailBackground,detImage,'detail_img'],
-            [detailBackground,detDescription,'detail_descr',workInformation[i].detailText],
-            [detailBackground,languagesDiv,'language_box'],
-            [languagesDiv,languagesDivLang1,'language_prop',workInformation[i].languages[0]],
-            [languagesDiv,languagesDivLang2,'language_prop',workInformation[i].languages[1]],
-            [languagesDiv,languagesDivLang3,'language_prop',workInformation[i].languages[2]],
-            [detailBackground,buttonsDiv,'det_buttons_div'],
-            [buttonsDiv,buttonsDivBtn1,'det_button'],
-            [buttonsDiv,buttonsDivBtn2,'det_button'],
-            [buttonsDivBtn1,button1Content1,'det_button_text','See live'],
-            [buttonsDivBtn1,button1Content2,'det_button_icon',],
-            [buttonsDivBtn2,button2Content1,'det_button_text','See Source'],
-            [buttonsDivBtn2,button2Content2,'det_button_icon'],
-            ];
-            constructor(elmArray)
-            button1Content2.src = './Assets/Images/detail_btn1.svg';
-            button2Content2.src = './Assets/Images/detail_btn2.svg';
-            det_close_btn.src = './Assets/Images/x2.svg';
-            detdot1.src = './Assets/Images/dot.png';
-            detdot2.src = './Assets/Images/dot.png';
-            detdot1.alt = 'dot';
-            detdot2.alt = 'dot';
-            button1Content2.alt = 'See live icon';
-            button2Content2.alt = 'See source';
-            det_close_btn.alt = 'Close';
-            detailBackground.style = 'animation-name: detail_open; animation-duration: 0.5s;';
-            detailPreBackground.style = 'animation-name: background-open; animation-duration: 0.5s;';
-            
-            for (let i = 0; i < 5; i += 1) {
-            sectObj[i].style = 'filter: blur(4px); -webkit-filter: blur(4px);';
-            }
-            det_close_btn.addEventListener('click',(event) =>{
-                event.preventDefault();
-                detailBackground.style = 'animation-name: detail_close;animation-duration: 1s;';
-                detailPreBackground.style = 'animation-name: background-close; animation-duration: 1s;';
-                setTimeout(()=>{detailPreBackground.remove(); detailBackground.remove();},800) 
-                for (let i = 0; i < 5; i += 1) {
-                    sectObj[i].style = '';
-                    }
-            })
-            detailPreBackground.addEventListener('click',(event) =>{
-                event.preventDefault();
-                detailBackground.style = 'animation-name: detail_close;animation-duration: 1s;';
-                detailPreBackground.style = 'animation-name: background-close; animation-duration: 1s;';
-                setTimeout(()=>{detailPreBackground.remove(); detailBackground.remove();},800) 
-                for (let i = 0; i < 5; i += 1) {
-                    sectObj[i].style = '';
-                    }
-            })
-    })
+    detCloseBtn.addEventListener('click', (event) => {
+      event.preventDefault();
+      elmArray = [];
+      detailBackground.style = 'animation-name: detail_close;animation-duration: 1s;';
+      detailPreBackground.style = 'animation-name: background-close; animation-duration: 1s;';
+      setTimeout(() => { detailPreBackground.remove(); detailBackground.remove(); }, 800);
+      for (let i = 0; i < 5; i += 1) {
+        sectObj[i].style = '';
+      }
+    });
+    detailPreBackground.addEventListener('click', (event) => {
+      event.preventDefault();
+      elmArray = [];
+      detailBackground.style = 'animation-name: detail_close;animation-duration: 1s;';
+      detailPreBackground.style = 'animation-name: background-close; animation-duration: 1s;';
+      setTimeout(() => { detailPreBackground.remove(); detailBackground.remove(); }, 800);
+      for (let i = 0; i < 5; i += 1) {
+        sectObj[i].style = '';
+      }
+    });
+  });
 }
+constructor(ElementsArray);

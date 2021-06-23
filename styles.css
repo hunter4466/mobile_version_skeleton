@@ -928,6 +928,8 @@ body {
   position: fixed;
   width: 100vw;
   height: 100vh;
+  left: 0.01vw;
+  top: 0.01vw;
   background-color: rgb(0, 0, 0);
   opacity: 0.4;
   z-index: 4;
