@@ -800,25 +800,25 @@ body {
   border-width: 0.2vw;
   border-color: rgba(0, 0, 0, 0.5);
   border-radius: 2vw;
-  top: 90vw;
+  top: 140vw;
   left: 30vw;
   width: 55vw;
   height: 9vw;
   background-color: white;
   opacity: 1;
-  animation-name: announce_appear;
+  animation-name: announce_appear1;
   animation-duration: 1s;
   padding: 2vw;
 }
 
-@keyframes announce_appear {
+@keyframes announce_appear1 {
   0% {
-    top: 100vw;
+    top: 145vw;
     opacity: 0;
   }
 
   100% {
-    top: 90vw;
+    top: 140vw;
     opacity: 1;
   }
 }
@@ -836,7 +836,7 @@ body {
   border-radius: 2vw;
   border-style: none;
   padding-left: 3vw;
-  padding-right: 3vw;
+  padding-right: 8vw;
   color: black;
   background-color: white;
 }
@@ -844,33 +844,43 @@ body {
 @keyframes email_input_error {
   0% {
     transform: translateX(0.01vw);
-    color: white;
-    background-color: red;
+    color: rgb(255, 255, 255);
+    background-color: rgb(204, 12, 12);
   }
 
   25% {
     transform: translateX(-1vw);
-    color: white;
-    background-color: red;
+    color: rgb(255, 255, 255);
+    background-color: rgb(204, 12, 12);
   }
 
   50% {
     transform: translateX(1vw);
-    color: white;
-    background-color: red;
+    color: rgb(255, 255, 255);
+    background-color: rgb(204, 12, 12);
   }
 
   75% {
     transform: translateX(-1vw);
-    color: white;
-    background-color: red;
+    color: rgb(255, 255, 255);
+    background-color: rgb(204, 12, 12);
   }
 
   100% {
     transform: translateX(1vw);
-    color: white;
-    background-color: red;
+    color: rgb(255, 255, 255);
+    background-color: rgb(204, 12, 12);
   }
+}
+
+.email_val_img {
+  position: absolute;
+  display: none;
+  width: 5vw;
+  height: 5vw;
+  z-index: 4;
+  left: 81vw;
+  top: 104vw;
 }
 
 .span_1 {
@@ -1997,6 +2007,16 @@ body {
     font-size: 1.18vw;
   }
 
+  .email_val_img {
+    position: absolute;
+    display: none;
+    width: 2vw;
+    height: 2vw;
+    z-index: 4;
+    left: 57vw;
+    top: 27.8vw;
+  }
+
   .announce_bad_email {
     position: absolute;
     box-shadow: 1vw 1vw 1vw 1vw rgba(0, 0, 0, 0.2);
@@ -2004,7 +2024,7 @@ body {
     border-width: 0.2vw;
     border-color: rgba(0, 0, 0, 0.5);
     border-radius: 0.5vw;
-    top: 25vw;
+    top: 45vw;
     left: 45vw;
     width: 16vw;
     height: 2.5vw;
@@ -2022,12 +2042,12 @@ body {
 
   @keyframes announce_appear {
     0% {
-      top: 35vw;
+      top: 50vw;
       opacity: 0;
     }
 
     100% {
-      top: 25vw;
+      top: 45vw;
       opacity: 1;
     }
   }

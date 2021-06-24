@@ -5,11 +5,11 @@ const emailInput = document.getElementById('email_input');
 const announce = document.createElement('div');
 const announceText = document.createElement('p');
 const contactForm = document.getElementById('contact_form');
-const emailRegExpr = /[A-Z]+/;
+const emailValImg = document.getElementById('email_val_img');
 
 function formValidate() {
-  const emailValidator = emailRegExpr.test(emailInput.value);
-  if (emailValidator) {
+  const strVal = emailInput.value;
+  if (strVal.toLowerCase() !== strVal) {
     if (announce) {
       announce.remove();
       contactForm.appendChild(announce);
@@ -32,13 +32,21 @@ function formValidate() {
   }
   return true;
 }
-if (emailRegExpr < 0) {
+if (emailValImg < 0) {
   formValidate();
 }
 
 emailInput.addEventListener('input', (event) => {
   event.preventDefault();
+  const strVal2 = emailInput.value;
   announce.remove();
+  if (strVal2.toLowerCase() !== strVal2) {
+    emailValImg.style = 'display:inline;';
+    emailValImg.src = './Assets/Images/false.png';
+  } else {
+    emailValImg.style = 'display:inline;';
+    emailValImg.src = './Assets/Images/true.png';
+  }
 });
 
 const sectionsObj = [];
