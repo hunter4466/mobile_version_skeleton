@@ -211,7 +211,7 @@ body {
   width: 88vw;
 }
 
-.about h2 {
+.about h3 {
   color: #344563;
   font-family: 'Poppins', sans-serif;
   font-style: normal;
@@ -793,6 +793,41 @@ body {
   margin: 0.1vw;
 }
 
+.announce_bad_email {
+  position: absolute;
+  box-shadow: 1vw 1vw 1vw 1vw rgba(0, 0, 0, 0.2);
+  border-style: solid;
+  border-width: 0.2vw;
+  border-color: rgba(0, 0, 0, 0.5);
+  border-radius: 2vw;
+  top: 90vw;
+  left: 30vw;
+  width: 55vw;
+  height: 9vw;
+  background-color: white;
+  opacity: 1;
+  animation-name: announce_appear;
+  animation-duration: 1s;
+  padding: 2vw;
+}
+
+@keyframes announce_appear {
+  0% {
+    top: 100vw;
+    opacity: 0;
+  }
+
+  100% {
+    top: 90vw;
+    opacity: 1;
+  }
+}
+
+.announce_text {
+  font-size: 3.5vw;
+  margin: 0.01vw;
+}
+
 .input_1 {
   margin-top: 4vw;
   width: 73vw;
@@ -802,6 +837,40 @@ body {
   border-style: none;
   padding-left: 3vw;
   padding-right: 3vw;
+  color: black;
+  background-color: white;
+}
+
+@keyframes email_input_error {
+  0% {
+    transform: translateX(0.01vw);
+    color: white;
+    background-color: red;
+  }
+
+  25% {
+    transform: translateX(-1vw);
+    color: white;
+    background-color: red;
+  }
+
+  50% {
+    transform: translateX(1vw);
+    color: white;
+    background-color: red;
+  }
+
+  75% {
+    transform: translateX(-1vw);
+    color: white;
+    background-color: red;
+  }
+
+  100% {
+    transform: translateX(1vw);
+    color: white;
+    background-color: red;
+  }
 }
 
 .span_1 {
@@ -1188,7 +1257,7 @@ body {
     height: 11vw;
   }
 
-  .about h2 {
+  .about h3 {
     color: #344563;
     font-family: 'Poppins', sans-serif;
     font-style: normal;
@@ -1926,6 +1995,41 @@ body {
     padding-right: 1.5vw;
     margin-left: 26vw;
     font-size: 1.18vw;
+  }
+
+  .announce_bad_email {
+    position: absolute;
+    box-shadow: 1vw 1vw 1vw 1vw rgba(0, 0, 0, 0.2);
+    border-style: solid;
+    border-width: 0.2vw;
+    border-color: rgba(0, 0, 0, 0.5);
+    border-radius: 0.5vw;
+    top: 25vw;
+    left: 45vw;
+    width: 16vw;
+    height: 2.5vw;
+    background-color: white;
+    opacity: 1;
+    animation-name: announce_appear;
+    animation-duration: 1s;
+    padding: 0.5vw;
+  }
+
+  .announce_text {
+    font-size: 1vw;
+    margin: 0.01vw;
+  }
+
+  @keyframes announce_appear {
+    0% {
+      top: 35vw;
+      opacity: 0;
+    }
+
+    100% {
+      top: 25vw;
+      opacity: 1;
+    }
   }
 
   .span_1 {
