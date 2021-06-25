@@ -27,15 +27,15 @@
     </div>
     <section class="header">
         <nav class="menu_title">
-            <a href="#"><img alt="Logo"  src="Assets/Images/my_logo.png"></a>
+            <a href="#sec_1"><img alt="Logo"  src="Assets/Images/my_logo.png"></a>
         </nav>
         <div id="menu_btn" class="menu_btn">
             <img alt="Menu_btn_element" class="menu_btn_elm" src="Assets/Images/menu.png">
         </div>
         <div class="links">
-            <a href="#">Portfolio</a>
-            <a href="#">About</a>
-            <a href="#">Contact</a>
+            <a href="#sec_3">Portfolio</a>
+            <a href="#sec_4">About</a>
+            <a href="#sec_5">Contact</a>
         </div>
     </section>
     <section class="work_grid" id="sec_1">
@@ -227,12 +227,13 @@
                 <input name="name_input" id="name_input" type="text" minlength="10" maxlength="30" required class="input_1 name_inp item" placeholder="Place your name here!">
                 <label for="email_input"></label>
                 <input name="email_input" id="email_input" type="email" minlength="10" maxlength="50" required class="input_1 email_inp item" placeholder="Place your e-mail here!">
-                <textarea name="message_textarea" minlength="10" maxlength="500" required class="span_1 item" placeholder="Write your text here"></textarea>
+                <textarea id="contact_text_area" name="message_textarea" minlength="10" maxlength="500" required class="span_1 item" placeholder="Write your text here"></textarea>
                 <button class="contact_button_1 item" type="submit">Get in Touch</button>  
             </form>
     </div>
 </section>
 <script type="text/javascript" src="./Assets/Javascript/index.js"></script>
 <script type="text/javascript" src="./Assets/Javascript/index2.js"></script>
+<script type="text/javascript" src="./Assets/Javascript/storage.js"></script>
 </body>
 </html>
